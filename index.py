@@ -1,4 +1,10 @@
+import discord
+from discord.ext import commands
+from colorama import Fore, Back, Style
 
+client = commands.Bot(command_prefix=".", self_bot=True)
+
+taevoz = client
 
 @taevoz.command()
 async def dmall(ctx, *, message):
@@ -12,3 +18,5 @@ async def dmall(ctx, *, message):
         except:
             print(f"{Fore.RED}[{Fore.RESET}!{Fore.RED}]{Fore.RESET} Couldn't Dmall {Fore.RED}1{Fore.RED}{Fore.RESET}")
             pass
+
+taevoz.run("token", bot=False)

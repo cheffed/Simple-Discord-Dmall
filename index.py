@@ -8,5 +8,7 @@ async def dmall(ctx, *, message):
             await asyncio.sleep(1)
             print(f"{Fore.RED}[{Fore.RESET}+{Fore.RED}]{Fore.RESET} Sleeping For {Fore.RED}1{Fore.RED}{Fore.RESET} Second")
             await user.send(message)
+            print(f"{Fore.RED}[{Fore.RESET}+{Fore.RED}]{Fore.RESET} Successfully {Fore.RED}Dmed{Fore.RED}{Fore.RESET} All")
         except:
+            print(f"{Fore.RED}[{Fore.RESET}!{Fore.RED}]{Fore.RESET} Couldn't Dmall {Fore.RED}1{Fore.RED}{Fore.RESET}")
             pass
